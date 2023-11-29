@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<!-- Set up the document so that you can use Jinja in the html code and have consistent styling guidlines all around -->
+<html lang="en">
+
+    <head>
+        <!-- Insert additional style guidlines here - for example calling bootstrap or a style sheet that we design -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>QuackLibs: {% block title %}{% endblock %}</title>
+    </head>
+
+    <body>
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+    </body>
+
+</html>
