@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Duck Takes a Tour!
+{% endblock %}
+
+{% block main %}
+<!-- Duck Takes a Tour! Grade 1 and Below Input Form -->
+    <form action="/town1" method="post">Duck Takes a Tour!</form>
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Input Selection</h2>
+
+            <!-- 1st Blank Input -->
+            <div class="accordion" id="town1Accordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                            aria-expanded="false" aria-controls="collapseOne">
+                            Noun (Required)
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#town1Accordion">
+                        <div class="accordion-body">
+                            <input type ="text" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2nd Blank Input -->
+            <div class="accordion" id="town1Accordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            Noun (Required)
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                        data-bs-parent="#town1Accordion">
+                        <div class="accordion-body">
+                            <input type ="text" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3rd Blank Input -->
+            <div class="accordion" id="town1Accordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingThree">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            Noun (Required)
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                        data-bs-parent="#town1Accordion">
+                        <div class="accordion-body">
+                            <input type ="text" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+{% endblock %}
