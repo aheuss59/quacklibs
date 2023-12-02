@@ -13,14 +13,13 @@ body {
     justify-content: space-between;
 }
 
-.logo {
+/*.logo {
     /* Your logo styles */
-}
+/*} */
 
-.navbar {
+/* .navbar { */
     /* Navbar styles */
-}
-
+/*} */
 .menu {
     list-style-type: none;
     margin: 0;
