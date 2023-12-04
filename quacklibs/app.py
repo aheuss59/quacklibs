@@ -42,6 +42,10 @@ def disney1():
     
     return render_template("disney1.html")
 
+@app.route("/disappearance1", methods=["GET", "POST"])
+def disappearance1():
+    return render_template("disappearance1.html")
+
 # Set up the level two page
 @app.route("/level2")
 def level2():
