@@ -17,8 +17,6 @@ def index():
 def level1():
     return render_template("level1.html")
 
-## For randomization: Javascript, dictionary with number value as key and link as value
-
 # Town Level 1
 @app.route("/town1", methods=["GET", "POST"])
 def town1():

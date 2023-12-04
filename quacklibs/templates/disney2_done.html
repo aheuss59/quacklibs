@@ -1,12 +1,17 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Insert Catchy Name for Disney Here...
+    Duck Goes to Disney
 {% endblock %}
 
 {% block main %}
 <!-- TODO: Fill in text here -->
-<h4>Catchy Disney Name</h4>
-    Text here with jinga formatting to fill in user input
+<h4>Duck Goes to Disney!</h4>
+DDB helped at school with {{ inputs[0] }}. She felt {{ inputs[1] }} because she missed her family. On a fun site called {{ inputs[2] }}, 
+DDB saw that her cousins {{ inputs[3] }} and {{ inputs[4] }} worked at Disney World! DDB wanted to see them and try the ride 
+{{ inputs[5] }} at Magic Kingdom. When she got there, she didn't know where to start! There were shows like "The Dazzling Acrobats" 
+and "It's a {{ inputs[6] }} World." But first, she wanted to see her cousins. DDB asked a guide where to find them. They said Mickey 
+Mouse {{ inputs[7] }}. There, she found her cousins with names {{ inputs[8] }} and {{ inputs[9] }}. DDB thought about a fun name for 
+school, like "The {{ inputs[10] }} Duck!" She had a great time! After a long day, DDB said goodbye and felt {{ inputs[11] }}.
     
 {% endblock %}
