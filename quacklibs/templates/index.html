@@ -1,11 +1,47 @@
-Welcome to QuackLibs! Select a level to begin!
+{% extends "layout.html" %}
 
-<!-- Very simple Homepage to start, just links to the pages for different levels of the Mad Libs-->
-<!-- In the final product, I'm thinking the homepage could maybe look sort of like the homepage for Canvas, --> 
-<!-- with an image relating to the level and a brief description-->
+{% block title %}
+    Duck Takes a Tour!
+{% endblock %}
 
-<a href="/level1">Level 1</a>
-<a href="/level2">Level 2</a>
-<a href="/level3">Level 3</a>
-
-<!-- TODO: implement a pretty user interface to select levels -->
+{% block main %}
+    <body>
+        <h3>Welcome to QuackLibs!</h3> 
+        <h6>
+            We are an educational webpage based on the traditional game MadLibs, which lets you play the game 
+            in a reading level that suits you. Select one of the grade options below to begin!
+        </h6>
+        <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Grade 1 and Below</h5>
+                <p class="card-text">Insert a description here.</p>
+                <a href="/level1" class="btn btn-primary">Go to Page</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-6">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Grades 2-5</h5>
+                <p class="card-text">Insert description here.</p>
+                <a href="/level2" class="btn btn-primary">Go to Page</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-6">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Grades 6-8</h5>
+                <p class="card-text">Insert description here.</p>
+                <a href="/level3" class="btn btn-primary">Go to Page</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+{% endblock %}
