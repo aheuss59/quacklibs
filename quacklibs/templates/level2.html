@@ -5,7 +5,8 @@
 {% endblock %}
 
 {% block main %}
-<!-- TODO: create an interface that allows user to select which MadLib they want to complete -->
+    <p>Thanks for playing QuackLibs! You've selected the 3rd-5th grade reading level. Click the button below to start a QuackLib!</p>
+<!-- Uses the random function to randomly redirect the user to one of the MadLib forms for that level -->
     <script src="{{ url_for('static', filename='random.js') }}"></script>
     <button class="start">Start a QuackLib Now!</button>
     <script>
