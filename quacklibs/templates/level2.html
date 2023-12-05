@@ -6,6 +6,9 @@
 
 {% block main %}
 <!-- TODO: create an interface that allows user to select which MadLib they want to complete -->
-    <a href="/town2">Town 2</a>
-    <a href="/disney2">Disney 2</a>
+    <script src="{{ url_for('static', filename='random.js') }}"></script>
+    <button class="start">Start a QuackLib Now!</button>
+    <script>
+        random_redirect(["/town2", "/disney2", "/disappearance2"]);
+    </script>
 {% endblock %}
