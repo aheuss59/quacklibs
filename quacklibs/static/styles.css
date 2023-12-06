@@ -71,6 +71,10 @@ footer {
     background-color: green;
     color: black;
     flex-shrink: 0;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
 
 .back-to-top {
@@ -101,5 +105,5 @@ footer {
 
 .card {
     width: 250px;
-    height: 500px;
+    height: 450px;
 }
