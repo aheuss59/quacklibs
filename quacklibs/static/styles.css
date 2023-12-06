@@ -98,3 +98,8 @@ footer {
     min-width: auto;
     min-height: 30px;
 }
+
+.card {
+    width: 250px;
+    height: 500px;
+}
