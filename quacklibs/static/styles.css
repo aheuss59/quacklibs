@@ -19,9 +19,8 @@ body {
 .logo {
     font-weight: bold; 
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: black; =
+    color: black;
     font-size: 24px;
-
 } 
 
 .navbar {
@@ -72,6 +71,7 @@ footer {
     background-color: green;
     color: black;
     flex-shrink: 0;
+}
 
 .back-to-top {
     display: none;
@@ -87,4 +87,14 @@ footer {
     font-size: 10px;
     color: black;
 
+}
+
+.spacer-sm {
+    min-width: auto;
+    min-height: 15px;
+}
+
+.spacer-lg {
+    min-width: auto;
+    min-height: 30px;
 }
