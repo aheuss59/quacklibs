@@ -18,22 +18,27 @@
     
     
     <body>
+        <a id="top"></a>
         <header class="header">
-            <div class="logo">Your Logo</div>
-            <nav class="navbar">
-                <ul class="menu">
-                    <li class="dropdown">
-                        <a href="#" class="dropbtn">Grades</a>
-                        <div class="dropdown-content">
-                            <a href="#">Grade 1 and Below </a>
-                            <a href="#">Grades 2-5</a>
-                            <a href="#">Grade 6-8</a>
-                            <a href="#">Option 4</a>
-                            <a href="#">Option 5</a>
+            <div class="logo">QuackLibs</div>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="/">Home</a>
+                            <a class="nav-link" href="/level1">2 and Below</a>
+                            <a class="nav-link" href="/level2">Grades 3-5</a>
+                            <a class="nav-link" href="/level3">Grades 6-8</a>
+                            <a class="nav-link" href="/level4">Grades 9-11</a>
+                            <a class="nav-link" href="/level5">Grades 12 and Above</a>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </nav>
+            
             <div class="icon">
                 <img src="/static/duck_icon.jpg" alt="Duck Icon">
             </div>
@@ -44,8 +49,33 @@
         </main>
     
         <footer>
-            <!-- Footer content -->
+            <!-- Back to Top Button -->
+            <a href="#top" class="back-to-top">Back to Top</a>
+            
+            <!-- Copyright Notice -->
+            <p class="copyright">© 2023 QuackLibs. All rights reserved.</p>
         </footer>
+        <script src="scripts.js"></script>
+
+        <script>
+            // JavaScript to capitalize the first letter of input fields with the class "capitalize-input"
+            document.querySelectorAll('.capitalize-input').forEach(function (input) {
+                input.addEventListener('input', function () {
+                    this.value = capitalizeFirstLetter(this.value);
+                });
+            });
+        
+            function capitalizeFirstLetter(word) {
+                // Ensure the input is not empty
+                if (word) {
+                    // Capitalize the first letter and concatenate with the rest of the word
+                    return word.charAt(0).toUpperCase() + word.slice(1);
+                } else {
+                    return "";
+                }
+            }
+        </script>
+        
     </body>
 
 </html>

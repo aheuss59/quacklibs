@@ -1,8 +1,11 @@
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: lightblue;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', sans-serif;
 }
 
 .header {
@@ -13,13 +16,20 @@ body {
     justify-content: space-between;
 }
 
-/*.logo {
-    /* Your logo styles */
-/*} */
+.logo {
+    font-weight: bold; 
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: black; =
+    font-size: 24px;
 
-/* .navbar { */
-    /* Navbar styles */
-/*} */
+} 
+
+.navbar {
+    color: black; 
+    text-decoration: underline; 
+    background-color: #90ee90; 
+    
+} 
 .menu {
     list-style-type: none;
     margin: 0;
@@ -53,4 +63,28 @@ body {
 .icon img {
     width: 50px; 
     height: 50px;
+}
+
+/* CSS Styles for Footer */
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: green;
+    color: black;
+    flex-shrink: 0;
+
+.back-to-top {
+    display: none;
+    background-color: green;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copyright {
+    font-size: 10px;
+    color: black;
+
 }
