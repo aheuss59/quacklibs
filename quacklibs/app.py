@@ -40,8 +40,15 @@ def disney1():
     
     return render_template("disney1.html")
 
+# Disappearance Level 1
 @app.route("/disappearance1", methods=["GET", "POST"])
 def disappearance1():
+    if request.method == "POST":
+        inputs = []
+        for key, values in request.form.items():
+            inputs.append(values)
+        return render_template("disappearance1_done.html", inputs=inputs)
+    
     return render_template("disappearance1.html")
 
 # Set up the level two page
@@ -74,6 +81,18 @@ def disney2():
     
     return render_template("disney2.html")
 
+# Disappearance Level 2
+@app.route("/disappearance2", methods=["GET", "POST"])
+def disappearance2():
+    if request.method == "POST":
+        inputs = []
+
+        for key, values in request.form.items():
+            inputs.append(values)
+        return render_template("disappearance2_done.html", inputs=inputs)
+    
+    return render_template("disappearance2.html")
+
 # Set up the level three page
 @app.route("/level3")
 def level3():
@@ -101,3 +120,95 @@ def disney3():
         return render_template("disney3_done.html", inputs=inputs)
     
     return render_template("disney3.html")
+
+# Disappearance Level 3
+@app.route("/disappearance3", methods=["GET", "POST"])
+def disappearance3():
+    if request.method == "POST":
+        inputs = []
+
+        for key, values in request.form.items():
+            inputs.append(values)
+        return render_template("disappearance3_done.html", inputs=inputs)
+    
+    return render_template("disappearance3.html")
+
+# Set up the level four page
+@app.route("/level4")
+def level4():
+    return render_template("level4.html")
+# Town Level 4
+@app.route("/town4", methods=["GET", "POST"])
+def town4():
+    if request.method == "POST":
+        inputs = []
+
+        for key, values in request.form.items():
+            inputs.append(values)
+        return render_template("town4_done.html", inputs=inputs)
+    
+    return render_template("town4.html")
+
+# Disney Level 4
+@app.route("/disney4", methods=["GET", "POST"])
+def disney4():
+    if request.method == "POST":
+        inputs = []
+
+        for key, values in request.form.items():
+            inputs.append(values)
+        return render_template("disney4_done.html", inputs=inputs)
+    
+    return render_template("disney4.html")
+
+# Disappearance Level 4
+@app.route("/disappearance4", methods=["GET", "POST"])
+def disappearance4():
+    if request.method == "POST":
+        inputs = []
+
+        for key, values in request.form.items():
+            inputs.append(values)
+        return render_template("disappearance4_done.html", inputs=inputs)
+    
+    return render_template("disappearance4.html")
+
+# Set up the level five page
+@app.route("/level5")
+def level5():
+    return render_template("level5.html")
+# Town Level 5
+@app.route("/town5", methods=["GET", "POST"])
+def town5():
+    if request.method == "POST":
+        inputs = []
+
+        for key, values in request.form.items():
+            inputs.append(values)
+        return render_template("town5_done.html", inputs=inputs)
+    
+    return render_template("town5.html")
+
+# Disney Level 5
+@app.route("/disney5", methods=["GET", "POST"])
+def disney5():
+    if request.method == "POST":
+        inputs = []
+
+        for key, values in request.form.items():
+            inputs.append(values)
+        return render_template("disney5_done.html", inputs=inputs)
+    
+    return render_template("disney5.html")
+
+# Disappearance Level 5
+@app.route("/disappearance5", methods=["GET", "POST"])
+def disappearance5():
+    if request.method == "POST":
+        inputs = []
+
+        for key, values in request.form.items():
+            inputs.append(values)
+        return render_template("disappearance5_done.html", inputs=inputs)
+    
+    return render_template("disappearance5.html")
