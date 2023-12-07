@@ -180,3 +180,7 @@ footer {
 .start:hover {
     transform: skew(-10deg);
 }
+
+.underline-input {
+    text-decoration: underline;
+}
