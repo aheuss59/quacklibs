@@ -6,10 +6,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Comic Sans MS', sans-serif;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px; 
 }
-
 .header {
-    background-color: #90ee90; /* Pastel green */
+    background-color: #90ee90;
     padding: 15px;
     display: flex;
     align-items: center;
@@ -17,33 +19,68 @@ body {
 }
 
 .logo {
-    font-weight: bold; 
+    font-weight: bold;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     color: black;
     font-size: 24px;
-} 
-
+}
+.navbar-expand-lg {
+    background-color: #90ee90;
+}
+.navbar-toggler  {
+    background-color: #90ee90;
+}
+.navbar-toggler-icon  {
+    background-color: #90ee90;
+}
 .navbar {
-    color: black; 
-    text-decoration: underline; 
-    background-color: #90ee90; 
-    
-} 
+    background-color: #90ee90;
+}
+.navbar-nav {
+    background-color: #90ee90;
+}
+.container-fluid {
+    background-color: #90ee90;
+}
+.bg-light{
+    background-color: #90ee90;
+}
+
+.navbar-collapse {
+    background-color: #90ee90;
+}
+.navbar-toggler-icon {
+    background-color: #90ee90;
+}
+
+.nav-link {
+    background-color: #90ee90;
+    color: black;
+    text-decoration: underline;
+    padding: 8px 12px;
+    margin: 0 5px;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
 .menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: #90ee90; 
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    background-color: #90ee90; 
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #90ee90; 
     min-width: 120px;
     z-index: 1;
 }
@@ -53,10 +90,12 @@ body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    background-color: #90ee90; 
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    background-color: #90ee90; 
 }
 
 .icon img {
@@ -64,11 +103,11 @@ body {
     height: 50px;
 }
 
-/* CSS Styles for Footer */
+
 footer {
     text-align: center;
     padding: 5px 0;
-    background-color: green;
+    background-color: #90ee90;
     color: black;
     flex-shrink: 0;
     position: fixed;
@@ -79,7 +118,7 @@ footer {
 
 .back-to-top {
     display: none;
-    background-color: green;
+    background-color: #90ee90;
     color: black;
     padding: 5px 10px;
     text-decoration: none;
@@ -106,4 +145,38 @@ footer {
 .card {
     width: 250px;
     height: 450px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid orange;
+    border-radius: 8px;
+    background-color: lightgreen;
+    font-weight: bold;
+    text-decoration: none;
+    color: orange;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    transform: skew(-10deg);
+}
+
+
+.custom-btn {
+    font-family: 'Arial', sans-serif; 
+}
+.start {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid orange;
+    border-radius: 8px;
+    background-color: white;
+    font-weight: bold;
+    text-decoration: none;
+    color: orange;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif; 
+}
+.start:hover {
+    transform: skew(-10deg);
 }

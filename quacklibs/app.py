@@ -5,8 +5,6 @@ from flask_session import Session
 # Configure application
 app = Flask(__name__) 
 
-db = SQL("sqlite:///libs.db")
-
 # Render the homepage
 @app.route("/")
 def index():
