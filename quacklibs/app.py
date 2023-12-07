@@ -1,4 +1,3 @@
-from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
 from flask_session import Session
 
@@ -18,10 +17,16 @@ def level1():
 # Town Level 1
 @app.route("/town1", methods=["GET", "POST"])
 def town1():
+    # When the method is post
     if request.method == "POST":
+        # Create an empty list
         inputs = []
-
+        # Populate the list with all the user inputs from the form
         for key, values in request.form.items():
+            # Make sure value exists/that the user put something there
+            if not values:
+                return 1
+            # add value to the list
             inputs.append(values)
         return render_template("town1_done.html", inputs=inputs)
     
@@ -33,6 +38,8 @@ def disney1():
     if request.method == "POST":
         inputs = []
         for key, values in request.form.items():
+            if not values:
+                return 1
             inputs.append(values)
         return render_template("disney1_done.html", inputs=inputs)
     
@@ -44,6 +51,8 @@ def disappearance1():
     if request.method == "POST":
         inputs = []
         for key, values in request.form.items():
+            if not values:
+                return 1
             inputs.append(values)
         return render_template("disappearance1_done.html", inputs=inputs)
     
@@ -61,6 +70,8 @@ def town2():
         inputs = []
 
         for key, values in request.form.items():
+            if not values:
+                return 1
             inputs.append(values)
         print(inputs)
         return render_template("town2_done.html", inputs=inputs)
@@ -74,6 +85,8 @@ def disney2():
         inputs = []
 
         for key, values in request.form.items():
+            if not values:
+                return 1
             inputs.append(values)
         return render_template("disney2_done.html", inputs=inputs)
     
@@ -86,6 +99,8 @@ def disappearance2():
         inputs = []
 
         for key, values in request.form.items():
+            if not values:
+                return 1
             inputs.append(values)
         return render_template("disappearance2_done.html", inputs=inputs)
     
@@ -102,6 +117,8 @@ def town3():
         inputs = []
 
         for key, values in request.form.items():
+            if not values:
+                return 1
             inputs.append(values)
         return render_template("town3_done.html", inputs=inputs)
     
@@ -114,6 +131,8 @@ def disney3():
         inputs = []
 
         for key, values in request.form.items():
+            if not values:
+                return 1
             inputs.append(values)
         return render_template("disney3_done.html", inputs=inputs)
     
@@ -126,6 +145,8 @@ def disappearance3():
         inputs = []
 
         for key, values in request.form.items():
+            if not values:
+                return 1
             inputs.append(values)
         return render_template("disappearance3_done.html", inputs=inputs)
     
@@ -142,6 +163,8 @@ def town4():
         inputs = []
 
         for key, values in request.form.items():
+            if not values:
+                return 1
             inputs.append(values)
         return render_template("town4_done.html", inputs=inputs)
     
@@ -154,6 +177,8 @@ def disney4():
         inputs = []
 
         for key, values in request.form.items():
+            if not values:
+                return 1
             inputs.append(values)
         return render_template("disney4_done.html", inputs=inputs)
     
@@ -166,6 +191,8 @@ def disappearance4():
         inputs = []
 
         for key, values in request.form.items():
+            if not values:
+                return 1
             inputs.append(values)
         return render_template("disappearance4_done.html", inputs=inputs)
     
@@ -182,6 +209,8 @@ def town5():
         inputs = []
 
         for key, values in request.form.items():
+            if not values:
+                return 1
             inputs.append(values)
         return render_template("town5_done.html", inputs=inputs)
     
@@ -194,6 +223,8 @@ def disney5():
         inputs = []
 
         for key, values in request.form.items():
+            if not values:
+                return 1
             inputs.append(values)
         return render_template("disney5_done.html", inputs=inputs)
     
@@ -206,6 +237,8 @@ def disappearance5():
         inputs = []
 
         for key, values in request.form.items():
+            if not values:
+                return 1
             inputs.append(values)
         return render_template("disappearance5_done.html", inputs=inputs)
     

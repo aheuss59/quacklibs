@@ -1,11 +1,12 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Duck Takes a Tour!
+    Home
 {% endblock %}
 
 {% block main %}
     <body>
+        <!-- Little welcome message -->
         <h3>Welcome to QuackLibs!</h3> 
         <div class="spacer-sm"></div>
         <h6>
@@ -13,17 +14,22 @@
             in a reading level that suits you. Select one of the grade options below to begin!
         </h6>
         <div class="spacer-lg"></div>
+        <!-- Use bootstrap to make a homepage (inspired by the Canvas homepage) that lets users navigate to one of five reading 
+            levels-->
         <div class="row">
             <div class="col-sm mb-3 mb-sm-0">
                 <div class="card">
+                    <!-- add an image at the top of the card -->
                     <img src="/static/level1_duck.png" class="card-img-top img-fluid" alt="Duck with Pinwheel">
                     <div class="card-body">
+                        <!-- label, describe, and give a link to the card -->
                         <h5 class="card-title">Grade 2 and Below</h5>
                         <p class="card-text">This is the beginner level!</p>
                         <a href="/level1" class="btn btn-primary custom-btn">Go to Page</a>
                     </div>
                 </div>
             </div>
+            <!-- Repeat the process for the other four cards -->
             <div class="col-sm">
                 <div class="card">
                     <img src="/static/level2_duck.png" class="card-img-top img-fluid" alt="Duck kicking soccer ball">
@@ -65,5 +71,7 @@
                 </div>
             </div>
         </div>
+        Photo credits: Ducks for each grade level were made using free Canva resources. The source for the logo is: 
+        https://www.istockphoto.com/photos/cartoon-duck
     </body>
 {% endblock %}

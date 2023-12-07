@@ -1,33 +1,45 @@
+<!-- Declaring the HTML version and language -->
 <!DOCTYPE html>
-
-<!-- Set up the document so that you can use Jinja in the html code and have consistent styling guidlines all around -->
 <html lang="en">
 
+    <!-- Header Section -->
     <head>
-        <!-- Insert additional style guidlines here - for example calling bootstrap or a style sheet that we design -->
+        <!-- Additional style guidelines -->
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, width=device-width">
 
-          <!-- http://getbootstrap.com/docs/5.1/ -->
-         <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
-         <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
-         <link href="/static/styles.css" rel="stylesheet">
-         <!-- add link to duck icon in staic folder -->
+        <!-- Linking external CSS and JavaScript libraries -->
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+        <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
+        <link href="/static/styles.css" rel="stylesheet">
+
+        <!-- Setting the title of the webpage -->
         <title>QuackLibs: {% block title %}{% endblock %}</title>
     </head>
     
     
+    <!-- Body Section -->
     <body>
+        <!-- Anchor for returning to the top of the page -->
         <a id="top"></a>
+        
+        <!-- Header Section -->
         <header class="header">
+            <!-- Logo of the website -->
             <div class="logo">QuackLibs</div>
+            
+            <!-- Navigation bar -->
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
+                    <!-- Button for collapsing navigation links on smaller screens -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- Collapsible navigation links -->
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <!-- Navigation links -->
                         <div class="navbar-nav">
+                            <!-- Links to different levels -->
                             <a class="nav-link" href="/">Home</a>
                             <a class="nav-link" href="/level1">2 and Below</a>
                             <a class="nav-link" href="/level2">Grades 3-5</a>
@@ -39,17 +51,23 @@
                 </div>
             </nav>
             
+            <!-- Image icon -->
             <div class="icon">
                 <img src="/static/duck_icon.jpg" alt="Duck Icon">
             </div>
         </header>
 
+        <!-- Main Content Section -->
         <main>
+            <!-- Spacer for maintaining space between content blocks -->
             <div class="spacer-lg"></div>
+            <!-- Placeholder for main content -->
             {% block main %}{% endblock %}
+            <!-- Spacer for maintaining space between content blocks -->
             <div class="spacer-lg"></div>
         </main>
     
+        <!-- Footer Section -->
         <footer>
             <!-- Back to Top Button -->
             <a href="#top" class="back-to-top">Back to Top</a>
@@ -58,8 +76,9 @@
             <p class="copyright">© 2023 QuackLibs. All rights reserved.</p>
         </footer>
 
+        <!-- JavaScript Code for Capitalizing Input -->
         <script>
-            // JavaScript to capitalize the first letter of input fields with the class "capitalize-input"
+            // JavaScript function to capitalize the first letter of input fields
             document.querySelectorAll('.capitalize-input').forEach(function (input) {
                 input.addEventListener('input', function () {
                     this.value = capitalizeFirstLetter(this.value);
@@ -77,15 +96,13 @@
             }
         </script>
 
+        <!-- JavaScript Code for Underlining Input Fields -->
         <script>
-            // JavaScript to handle input events
+            // JavaScript to handle input events for underlined input fields
             document.querySelectorAll('.underline-input').forEach(function (input) {
                 input.addEventListener('input', function () {
-                    // No need to modify the value, the style will be applied through CSS
                 });
             });
         </script>
-        
     </body>
-
 </html>

@@ -1,29 +1,47 @@
+/* Styling for the body */
 body {
+    /* Display the elements in a column */
     display: flex;
     flex-direction: column;
+    /* Set a minimum height of 100% of the viewport height */
     min-height: 100vh;
+    /* Background color for the body */
     background-color: lightblue;
+    /* Reset default margin and padding */
     margin: 0;
     padding: 0;
+    /* Set the font family and alignment for text */
     font-family: 'Comic Sans MS', sans-serif;
     text-align: center;
+    /* Add margins on the left and right sides */
     margin-left: 20px;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
+
+/* Styling for the header */
 .header {
+    /* Background color for the header */
     background-color: #90ee90;
+    /* Padding around the header content */
     padding: 15px;
+    /* Display header content as flex, centered horizontally */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* Styling for the logo */
 .logo {
+    /* Bold and specific font family */
     font-weight: bold;
     font-family: 'Comic Sans MS', cursive, sans-serif;
+    /* Text color for the logo */
     color: black;
+    /* Font size for the logo */
     font-size: 24px;
 }
+
+/* Styling for navigation elements */
 .navbar-expand-lg {
     background-color: #90ee90;
 }
@@ -85,7 +103,7 @@ body {
     z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -103,21 +121,35 @@ body {
     height: 50px;
 }
 
+/* Styling for hovered navigation links */
+.nav-link:hover {
+    /* Opacity change on hover */
+    opacity: 0.8;
+}
 
+/* Styling for the footer */
 footer {
+    /* Text alignment and padding in the footer */
     text-align: center;
     padding: 5px 0;
+    /* Background color for the footer */
     background-color: #90ee90;
+    /* Text color for the footer content */
     color: black;
+    /* Prevent footer from flex shrinking */
     flex-shrink: 0;
+    /* Fixed positioning for the footer */
     position: fixed;
     left: 0px;
     right: 0px;
     bottom: 0px;
 }
 
+/* Styling for the back-to-top button */
 .back-to-top {
+    /* Hide the back-to-top button by default */
     display: none;
+    /* Styling for the button */
     background-color: #90ee90;
     color: black;
     padding: 5px 10px;
@@ -126,27 +158,36 @@ footer {
     cursor: pointer;
 }
 
+/* Styling for the copyright text */
 .copyright {
+    /* Font size and text color for copyright */
     font-size: 10px;
     color: black;
-
 }
 
+/* Styling for spacer elements */
 .spacer-sm {
+    /* Minimum width and height for small spacer */
     min-width: auto;
     min-height: 15px;
 }
 
 .spacer-lg {
+    /* Minimum width and height for large spacer */
     min-width: auto;
     min-height: 30px;
 }
 
+/* Styling for cards */
 .card {
+    /* Dimensions for cards */
     width: 250px;
     height: 450px;
 }
+
+/* Styling for buttons */
 .btn {
+    /* Display as inline-block with padding and border */
     display: inline-block;
     padding: 10px 20px;
     border: 2px solid orange;
@@ -157,15 +198,22 @@ footer {
     color: orange;
     transition: all 0.3s ease;
 }
+
+/* Styling for hovered buttons */
 .btn:hover {
+    /* Transformation on hover */
     transform: skew(-10deg);
 }
 
-
+/* Additional button style */
 .custom-btn {
-    font-family: 'Arial', sans-serif; 
+    /* Font family for custom buttons */
+    font-family: 'Arial', sans-serif;
 }
+
+/* Styling for a specific start button */
 .start {
+    /* Display as inline-block with specific border and background */
     display: inline-block;
     padding: 10px 20px;
     border: 2px solid orange;
@@ -177,10 +225,15 @@ footer {
     transition: all 0.3s ease;
     font-family: 'Arial', sans-serif; 
 }
+
+/* Styling for hovered start button */
 .start:hover {
+    /* Transformation on hover */
     transform: skew(-10deg);
 }
 
+/* Styling for underlined input elements */
 .underline-input {
+    /* Text decoration for underlined input */
     text-decoration: underline;
 }
