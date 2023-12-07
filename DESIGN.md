@@ -1,0 +1,1 @@
+This is a document where we talk about why we designed the code the way we did. It should be several paragraphs in length. 

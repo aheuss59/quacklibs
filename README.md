@@ -1,2 +1,10 @@
 # quacklibs
 CS50 final project
+
+Video link: 
+
+I'm not super sure what to write in this README file, but our final project is an online version of the classic game, MadLibs, which we have entitled QuackLibs and have framed in an educational way. Our website allows a user to choose which reading level they are at and to fill in a form with the words needed to complete the QuackLib. Users then get back the story, with their words filled into it. MadLibs (and QuackLibs) are supposed to have silly outputs that perhaps don't make the most sense. 
+
+This program was created in a WSL space on VS Code and requires python, JavaScript, CSS, jinja, and html. To compile the program, first make sure you have python-dotenv installed. If you do not, you should be able to install using pip install python-dotenv. From there, make sure you are in the folder quacklibs within the quacklibs project (the terminal should say quacklibs/quacklibs$). You should then be able to run the application using "flask run" in the terminal. 
+
+You should then be able to use the link in the terminal to take youself to the homepage of our website where you should be greeted by some cute ducks. You can use either the navigation bar or the links on the homepage to navigate to the page of the reading level that best suits you. Click the begin QuackLib now button to begin the form for a randomly selected QuackLib. All blanks are required and some will auto-capitalize. It is in your best interest to fill out the form with the requested word (if it asks for a noun, you should actually provide a noun). We will not stop you from inputting a verb in place of a noun, but the story will not make as much sense and will not be as fun when you are done. When you are finished filling in your words, click the submit button at the bottom of the page to receive your completed QuackLib. You may complete another by using the navigation bar to return to your reading level and randomly generating a new QuackLib. 
