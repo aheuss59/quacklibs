@@ -17,6 +17,3 @@ If you toggle over the buttons, you will be able to see a slight angle of the bu
 When the stories are processed, pictures are shown at the end of the story so the user-created story can be visualized. This helps the reader not only see words but also see their stories.
 
 Our website used bootstrap to implement a navigation bar for ease of use. Overall, the aesthetic presented on our website is supposed to be able to bring the story templates that we have created to life by the user, and for them to embrace the CS50 duck DDB in all its glory. 
-
-
-
